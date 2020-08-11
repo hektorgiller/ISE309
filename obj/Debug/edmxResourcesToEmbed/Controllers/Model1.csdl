@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SporSalonuModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Arka_Bacak">
+    <Key>
+      <PropertyRef Name="ArkaBacakID" />
+    </Key>
+    <Property Name="ArkaBacakID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Arka_Bacak" FromRole="Arka_Bacak" ToRole="Program" />
+  </EntityType>
+  <EntityType Name="Arka_Pazı">
+    <Key>
+      <PropertyRef Name="ArkaPazıID" />
+    </Key>
+    <Property Name="ArkaPazıID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Arka_Pazı" FromRole="Arka_Pazı" ToRole="Program" />
+  </EntityType>
+  <EntityType Name="Baldır">
+    <Key>
+      <PropertyRef Name="BaldırID" />
+    </Key>
+    <Property Name="BaldırID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Baldır" FromRole="Baldır" ToRole="Program" />
+  </EntityType>
+  <EntityType Name="Göğüs">
+    <Key>
+      <PropertyRef Name="GöğüsID" />
+    </Key>
+    <Property Name="GöğüsID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Göğüs" FromRole="Göğüs" ToRole="Program" />
+  </EntityType>
+  <EntityType Name="Hareket">
+    <Key>
+      <PropertyRef Name="HareketID" />
+    </Key>
+    <Property Name="HareketID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HareketBölge" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+  </EntityType>
+  <EntityType Name="Kanat">
+    <Key>
+      <PropertyRef Name="KanatID" />
+    </Key>
+    <Property Name="KanatID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Kanat" FromRole="Kanat" ToRole="Program" />
+  </EntityType>
+  <EntityType Name="Karın">
+    <Key>
+      <PropertyRef Name="KarınID" />
+    </Key>
+    <Property Name="KarınID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Karın" FromRole="Karın" ToRole="Program" />
+  </EntityType>
+  <EntityType Name="Omuz">
+    <Key>
+      <PropertyRef Name="OmuzID" />
+    </Key>
+    <Property Name="OmuzID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Omuz" FromRole="Omuz" ToRole="Program" />
+  </EntityType>
+  <EntityType Name="Ön_Bacak">
+    <Key>
+      <PropertyRef Name="ÖnBacakID" />
+    </Key>
+    <Property Name="ÖnBacakID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Ön_Bacak" FromRole="Ön_Bacak" ToRole="Program" />
+  </EntityType>
+  <EntityType Name="Ön_Kol">
+    <Key>
+      <PropertyRef Name="ÖnKolID" />
+    </Key>
+    <Property Name="ÖnKolID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Ön_Kol" FromRole="Ön_Kol" ToRole="Program" />
+  </EntityType>
+  <EntityType Name="Ön_Pazı">
+    <Key>
+      <PropertyRef Name="ÖnPazıID" />
+    </Key>
+    <Property Name="ÖnPazıID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HareketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TekrarSayisi" Type="Byte" />
+    <Property Name="Kalori" Type="Byte" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Ön_Pazı" FromRole="Ön_Pazı" ToRole="Program" />
+  </EntityType>
+  <EntityType Name="Program">
+    <Key>
+      <PropertyRef Name="ProgramID" />
+    </Key>
+    <Property Name="ProgramID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UyeID" Type="Byte" />
+    <Property Name="ArkaBacakID" Type="Byte" />
+    <Property Name="ArkaPazıID" Type="Byte" />
+    <Property Name="BaldırID" Type="Byte" />
+    <Property Name="GöğüsID" Type="Byte" />
+    <Property Name="KanatID" Type="Byte" />
+    <Property Name="KarınID" Type="Byte" />
+    <Property Name="OmuzID" Type="Byte" />
+    <Property Name="ÖnBacakID" Type="Byte" />
+    <Property Name="ÖnKolID" Type="Byte" />
+    <Property Name="ÖnPazıID" Type="Byte" />
+    <Property Name="HaftalıkTekrar" Type="Int32" />
+    <NavigationProperty Name="Arka_Bacak" Relationship="Self.FK_Program_Arka_Bacak" FromRole="Program" ToRole="Arka_Bacak" />
+    <NavigationProperty Name="Arka_Pazı" Relationship="Self.FK_Program_Arka_Pazı" FromRole="Program" ToRole="Arka_Pazı" />
+    <NavigationProperty Name="Baldır" Relationship="Self.FK_Program_Baldır" FromRole="Program" ToRole="Baldır" />
+    <NavigationProperty Name="Göğüs" Relationship="Self.FK_Program_Göğüs" FromRole="Program" ToRole="Göğüs" />
+    <NavigationProperty Name="Kanat" Relationship="Self.FK_Program_Kanat" FromRole="Program" ToRole="Kanat" />
+    <NavigationProperty Name="Karın" Relationship="Self.FK_Program_Karın" FromRole="Program" ToRole="Karın" />
+    <NavigationProperty Name="Omuz" Relationship="Self.FK_Program_Omuz" FromRole="Program" ToRole="Omuz" />
+    <NavigationProperty Name="Ön_Bacak" Relationship="Self.FK_Program_Ön_Bacak" FromRole="Program" ToRole="Ön_Bacak" />
+    <NavigationProperty Name="Ön_Kol" Relationship="Self.FK_Program_Ön_Kol" FromRole="Program" ToRole="Ön_Kol" />
+    <NavigationProperty Name="Ön_Pazı" Relationship="Self.FK_Program_Ön_Pazı" FromRole="Program" ToRole="Ön_Pazı" />
+    <NavigationProperty Name="Uye" Relationship="Self.FK_Program_Uye" FromRole="Program" ToRole="Uye" />
+  </EntityType>
+  <EntityType Name="Uye">
+    <Key>
+      <PropertyRef Name="UyeID" />
+    </Key>
+    <Property Name="UyeID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UyeAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UyeSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UyeYas" Type="Byte" />
+    <Property Name="UyeKg" Type="Byte" />
+    <Property Name="UyelikBitis" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Program" Relationship="Self.FK_Program_Uye" FromRole="Uye" ToRole="Program" />
+  </EntityType>
+  <Association Name="FK_Program_Arka_Bacak">
+    <End Role="Arka_Bacak" Type="Self.Arka_Bacak" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Arka_Bacak">
+        <PropertyRef Name="ArkaBacakID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="ArkaBacakID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Program_Arka_Pazı">
+    <End Role="Arka_Pazı" Type="Self.Arka_Pazı" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Arka_Pazı">
+        <PropertyRef Name="ArkaPazıID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="ArkaPazıID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Program_Baldır">
+    <End Role="Baldır" Type="Self.Baldır" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Baldır">
+        <PropertyRef Name="BaldırID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="BaldırID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Program_Göğüs">
+    <End Role="Göğüs" Type="Self.Göğüs" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Göğüs">
+        <PropertyRef Name="GöğüsID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="GöğüsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Program_Kanat">
+    <End Role="Kanat" Type="Self.Kanat" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kanat">
+        <PropertyRef Name="KanatID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="KanatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Program_Karın">
+    <End Role="Karın" Type="Self.Karın" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Karın">
+        <PropertyRef Name="KarınID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="KarınID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Program_Omuz">
+    <End Role="Omuz" Type="Self.Omuz" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Omuz">
+        <PropertyRef Name="OmuzID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="OmuzID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Program_Ön_Bacak">
+    <End Role="Ön_Bacak" Type="Self.Ön_Bacak" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ön_Bacak">
+        <PropertyRef Name="ÖnBacakID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="ÖnBacakID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Program_Ön_Kol">
+    <End Role="Ön_Kol" Type="Self.Ön_Kol" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ön_Kol">
+        <PropertyRef Name="ÖnKolID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="ÖnKolID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Program_Ön_Pazı">
+    <End Role="Ön_Pazı" Type="Self.Ön_Pazı" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ön_Pazı">
+        <PropertyRef Name="ÖnPazıID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="ÖnPazıID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Program_Uye">
+    <End Role="Uye" Type="Self.Uye" Multiplicity="0..1" />
+    <End Role="Program" Type="Self.Program" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uye">
+        <PropertyRef Name="UyeID" />
+      </Principal>
+      <Dependent Role="Program">
+        <PropertyRef Name="UyeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SporSalonuEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Arka_Bacak" EntityType="Self.Arka_Bacak" />
+    <EntitySet Name="Arka_Pazı" EntityType="Self.Arka_Pazı" />
+    <EntitySet Name="Baldır" EntityType="Self.Baldır" />
+    <EntitySet Name="Göğüs" EntityType="Self.Göğüs" />
+    <EntitySet Name="Hareket" EntityType="Self.Hareket" />
+    <EntitySet Name="Kanat" EntityType="Self.Kanat" />
+    <EntitySet Name="Karın" EntityType="Self.Karın" />
+    <EntitySet Name="Omuz" EntityType="Self.Omuz" />
+    <EntitySet Name="Ön_Bacak" EntityType="Self.Ön_Bacak" />
+    <EntitySet Name="Ön_Kol" EntityType="Self.Ön_Kol" />
+    <EntitySet Name="Ön_Pazı" EntityType="Self.Ön_Pazı" />
+    <EntitySet Name="Program" EntityType="Self.Program" />
+    <EntitySet Name="Uye" EntityType="Self.Uye" />
+    <AssociationSet Name="FK_Program_Arka_Bacak" Association="Self.FK_Program_Arka_Bacak">
+      <End Role="Arka_Bacak" EntitySet="Arka_Bacak" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Program_Arka_Pazı" Association="Self.FK_Program_Arka_Pazı">
+      <End Role="Arka_Pazı" EntitySet="Arka_Pazı" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Program_Baldır" Association="Self.FK_Program_Baldır">
+      <End Role="Baldır" EntitySet="Baldır" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Program_Göğüs" Association="Self.FK_Program_Göğüs">
+      <End Role="Göğüs" EntitySet="Göğüs" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Program_Kanat" Association="Self.FK_Program_Kanat">
+      <End Role="Kanat" EntitySet="Kanat" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Program_Karın" Association="Self.FK_Program_Karın">
+      <End Role="Karın" EntitySet="Karın" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Program_Omuz" Association="Self.FK_Program_Omuz">
+      <End Role="Omuz" EntitySet="Omuz" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Program_Ön_Bacak" Association="Self.FK_Program_Ön_Bacak">
+      <End Role="Ön_Bacak" EntitySet="Ön_Bacak" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Program_Ön_Kol" Association="Self.FK_Program_Ön_Kol">
+      <End Role="Ön_Kol" EntitySet="Ön_Kol" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Program_Ön_Pazı" Association="Self.FK_Program_Ön_Pazı">
+      <End Role="Ön_Pazı" EntitySet="Ön_Pazı" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Program_Uye" Association="Self.FK_Program_Uye">
+      <End Role="Uye" EntitySet="Uye" />
+      <End Role="Program" EntitySet="Program" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

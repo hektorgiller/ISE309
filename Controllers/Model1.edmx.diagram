@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a4f10bf7ccca4d9e97f95e5033582f53" Name="Diagram1">
+        <EntityTypeShape EntityType="SporSalonuModel.Arka_Bacak" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Arka_Pazı" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Baldır" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Göğüs" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Hareket" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Kanat" Width="1.5" PointX="0.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Karın" Width="1.5" PointX="0.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Omuz" Width="1.5" PointX="0.75" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Ön_Bacak" Width="1.5" PointX="0.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Ön_Kol" Width="1.5" PointX="0.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Ön_Pazı" Width="1.5" PointX="0.75" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Program" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SporSalonuModel.Uye" Width="1.5" PointX="0.75" PointY="31.25" IsExpanded="true" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Arka_Bacak" ManuallyRouted="false" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Arka_Pazı" ManuallyRouted="false" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Baldır" ManuallyRouted="false" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Göğüs" ManuallyRouted="false" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Kanat" ManuallyRouted="false" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Karın" ManuallyRouted="false" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Omuz" ManuallyRouted="false" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Ön_Bacak" ManuallyRouted="false" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Ön_Kol" ManuallyRouted="false" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Ön_Pazı" ManuallyRouted="false" />
+        <AssociationConnector Association="SporSalonuModel.FK_Program_Uye" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

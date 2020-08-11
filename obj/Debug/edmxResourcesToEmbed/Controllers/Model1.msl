@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SporSalonuModelStoreContainer" CdmEntityContainer="SporSalonuEntities">
+    <EntitySetMapping Name="Arka_Bacak">
+      <EntityTypeMapping TypeName="SporSalonuModel.Arka_Bacak">
+        <MappingFragment StoreEntitySet="Arka Bacak">
+          <ScalarProperty Name="ArkaBacakID" ColumnName="ArkaBacakID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Arka_Pazı">
+      <EntityTypeMapping TypeName="SporSalonuModel.Arka_Pazı">
+        <MappingFragment StoreEntitySet="Arka Pazı">
+          <ScalarProperty Name="ArkaPazıID" ColumnName="ArkaPazıID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Baldır">
+      <EntityTypeMapping TypeName="SporSalonuModel.Baldır">
+        <MappingFragment StoreEntitySet="Baldır">
+          <ScalarProperty Name="BaldırID" ColumnName="BaldırID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Göğüs">
+      <EntityTypeMapping TypeName="SporSalonuModel.Göğüs">
+        <MappingFragment StoreEntitySet="Göğüs">
+          <ScalarProperty Name="GöğüsID" ColumnName="GöğüsID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hareket">
+      <EntityTypeMapping TypeName="SporSalonuModel.Hareket">
+        <MappingFragment StoreEntitySet="Hareket">
+          <ScalarProperty Name="HareketID" ColumnName="HareketID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="HareketBölge" ColumnName="HareketBölge" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kanat">
+      <EntityTypeMapping TypeName="SporSalonuModel.Kanat">
+        <MappingFragment StoreEntitySet="Kanat">
+          <ScalarProperty Name="KanatID" ColumnName="KanatID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Karın">
+      <EntityTypeMapping TypeName="SporSalonuModel.Karın">
+        <MappingFragment StoreEntitySet="Karın">
+          <ScalarProperty Name="KarınID" ColumnName="KarınID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Omuz">
+      <EntityTypeMapping TypeName="SporSalonuModel.Omuz">
+        <MappingFragment StoreEntitySet="Omuz">
+          <ScalarProperty Name="OmuzID" ColumnName="OmuzID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ön_Bacak">
+      <EntityTypeMapping TypeName="SporSalonuModel.Ön_Bacak">
+        <MappingFragment StoreEntitySet="Ön Bacak">
+          <ScalarProperty Name="ÖnBacakID" ColumnName="ÖnBacakID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ön_Kol">
+      <EntityTypeMapping TypeName="SporSalonuModel.Ön_Kol">
+        <MappingFragment StoreEntitySet="Ön Kol">
+          <ScalarProperty Name="ÖnKolID" ColumnName="ÖnKolID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ön_Pazı">
+      <EntityTypeMapping TypeName="SporSalonuModel.Ön_Pazı">
+        <MappingFragment StoreEntitySet="Ön Pazı">
+          <ScalarProperty Name="ÖnPazıID" ColumnName="ÖnPazıID" />
+          <ScalarProperty Name="HareketAd" ColumnName="HareketAd" />
+          <ScalarProperty Name="TekrarSayisi" ColumnName="TekrarSayisi" />
+          <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Program">
+      <EntityTypeMapping TypeName="SporSalonuModel.Program">
+        <MappingFragment StoreEntitySet="Program">
+          <ScalarProperty Name="ProgramID" ColumnName="ProgramID" />
+          <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+          <ScalarProperty Name="ArkaBacakID" ColumnName="ArkaBacakID" />
+          <ScalarProperty Name="ArkaPazıID" ColumnName="ArkaPazıID" />
+          <ScalarProperty Name="BaldırID" ColumnName="BaldırID" />
+          <ScalarProperty Name="GöğüsID" ColumnName="GöğüsID" />
+          <ScalarProperty Name="KanatID" ColumnName="KanatID" />
+          <ScalarProperty Name="KarınID" ColumnName="KarınID" />
+          <ScalarProperty Name="OmuzID" ColumnName="OmuzID" />
+          <ScalarProperty Name="ÖnBacakID" ColumnName="ÖnBacakID" />
+          <ScalarProperty Name="ÖnKolID" ColumnName="ÖnKolID" />
+          <ScalarProperty Name="ÖnPazıID" ColumnName="ÖnPazıID" />
+          <ScalarProperty Name="HaftalıkTekrar" ColumnName="HaftalıkTekrar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uye">
+      <EntityTypeMapping TypeName="SporSalonuModel.Uye">
+        <MappingFragment StoreEntitySet="Uye">
+          <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+          <ScalarProperty Name="UyeAd" ColumnName="UyeAd" />
+          <ScalarProperty Name="UyeSoyad" ColumnName="UyeSoyad" />
+          <ScalarProperty Name="UyeYas" ColumnName="UyeYas" />
+          <ScalarProperty Name="UyeKg" ColumnName="UyeKg" />
+          <ScalarProperty Name="UyelikBitis" ColumnName="UyelikBitis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,115 @@
+﻿@model WebApplication8.Controllers.Program
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Program</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HaftalıkTekrar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HaftalıkTekrar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Arka_Bacak.HareketAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Arka_Bacak.HareketAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Arka_Pazı.HareketAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Arka_Pazı.HareketAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Baldır.HareketAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Baldır.HareketAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Göğüs.HareketAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Göğüs.HareketAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kanat.HareketAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kanat.HareketAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Karın.HareketAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Karın.HareketAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Omuz.HareketAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Omuz.HareketAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ön_Bacak.HareketAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ön_Bacak.HareketAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ön_Kol.HareketAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ön_Kol.HareketAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ön_Pazı.HareketAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ön_Pazı.HareketAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uye.UyeAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uye.UyeAd)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProgramID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

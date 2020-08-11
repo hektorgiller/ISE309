@@ -1,0 +1,65 @@
+﻿@model WebApplication8.Models.Ogrenci
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ogrenci</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrSoyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrSoyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrAdres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrAdres)
+        </dd>
+
+    </dl>
+    <div class="dl-horizontal">
+        <table>
+            <tr>
+                <td>Ders AD</td>
+                <td>Ders Akts</td>
+                <td>Ders Kredi</td>
+                <td>Ders Not</td>
+            </tr>
+            @foreach (var item in Model.Notlars)
+            {
+                <tr>
+                    <td>@item.Dersler.DersAd</td>
+                    <td>@item.Dersler.DersAkts</td>
+                    <td>@item.Dersler.DersSaat</td>
+                    <td>@item.NotSkor</td>
+                </tr>
+            }
+        </table>
+    </div>
+
+
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OgrID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,122 @@
+﻿@model IEnumerable<WebApplication8.Controllers.Program>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+
+            @Html.DisplayNameFor(model => model.Uye.UyeAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Uye.UyeSoyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HaftalıkTekrar)
+        </th>
+        <th>
+            @Html.DisplayName("Arka Pazı")]
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Arka_Bacak.HareketAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Arka_Pazı.HareketAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Baldır.HareketAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Göğüs.HareketAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kanat.HareketAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Karın.HareketAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Omuz.HareketAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ön_Bacak.HareketAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ön_Kol.HareketAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ön_Pazı.HareketAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Uye.UyeAd)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Uye.UyeAd)
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Uye.UyeSoyad)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.HaftalıkTekrar)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Arka_Bacak.HareketAd)
+
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Arka_Pazı.HareketAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Baldır.HareketAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Göğüs.HareketAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kanat.HareketAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Karın.HareketAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Omuz.HareketAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ön_Bacak.HareketAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ön_Kol.HareketAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ön_Pazı.HareketAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HaftalıkTekrar)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ProgramID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ProgramID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ProgramID })
+        </td>
+    </tr>
+}
+
+</table>
